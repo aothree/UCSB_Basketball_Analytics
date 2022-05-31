@@ -72,6 +72,7 @@ player_totals = player_totals.reset_index(level=0)
 player_totals = player_totals[
     [
         "Player",
+        "MIN",
         "PTS",
         "points/min",
         "REB",
