@@ -1,13 +1,5 @@
-import statistics
 import streamlit as st
 import pandas as pd
-#import matplotlib.pyplot as plt
-import numpy as np
-import requests
-import time
-import re
-import glob
-import os
 
 pd.options.display.max_columns = 999
 
@@ -33,8 +25,6 @@ players = [
     "4397521/calvin-wishart",
 ]
 
-cwd = os.getcwd()
-
 def change_col_types(df):
     numcols_to_change = df.columns
     for col in numcols_to_change:
@@ -46,9 +36,6 @@ def change_col_types(df):
 df_lst = []
 for player in players:
     url = f"https://www.espn.com/mens-college-basketball/player/gamelog/_/id/{player}"
-    #res = requests.get(url)
-    #with open(f"./Data/espn_player_stats/{player[7:]}.xls", "wb") as f:
-        #f.write(res.content)
     df = pd.read_html(url)
     stats = pd.DataFrame(df[0])
     stats["Player"] = player[8:]
