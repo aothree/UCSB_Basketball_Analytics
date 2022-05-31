@@ -2,7 +2,7 @@ from doctest import DocFileCase
 import statistics
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import numpy as np
 import requests
 import time
