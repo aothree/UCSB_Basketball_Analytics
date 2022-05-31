@@ -1,4 +1,2 @@
-pandas
-s3fs==0.4.*
 streamlit==1.1.*
 
