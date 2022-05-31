@@ -62,7 +62,7 @@ change_col_types(df)
 
 player_totals = df.groupby("Player").sum() #only season totals for each player
 
-#player_totals = player_totals.drop(columns=["FG%", "3P%", "FT%"])
+player_totals = player_totals.drop(columns=["FG%", "3P%", "FT%"])
 player_totals["rebounds/min"] = player_totals["REB"] / player_totals["MIN"]
 player_totals["assists/min"] = player_totals["AST"] / player_totals["MIN"]
 player_totals["blocks/min"] = player_totals["BLK"] / player_totals["MIN"]
@@ -98,10 +98,7 @@ player_totals = player_totals[
         "BLK",
         "blocks/min",
         "STL",
-        "steals/min",
-        "FG%",
-        "3P%", 
-        "FT%"        
+        "steals/min",       
     ]
 ]
 
