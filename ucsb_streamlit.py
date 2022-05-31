@@ -1,4 +1,3 @@
-from doctest import DocFileCase
 import statistics
 import streamlit as st
 import pandas as pd
@@ -35,20 +34,6 @@ players = [
 ]
 
 cwd = os.getcwd()
-cwd
-
-for player in players:
-    url = f"https://www.espn.com/mens-college-basketball/player/gamelog/_/id/{player}"
-    res = requests.get(url)
-    with open(f"./Data/espn_player_stats/{player[7:]}.xls", "wb") as f:
-        f.write(res.content)
-    df = pd.read_html(f"./Data/espn_player_stats/{player[7:]}.xls")
-    stats = pd.DataFrame(df[0])
-    stats["Player"] = player[8:]
-
-    stats = stats[:-1]  # drops last row which is an averages row
-    stats.to_csv(f"./Data/espn_player_stats/{player[7:]}.csv")
-
 
 def change_col_types(df):
     numcols_to_change = df.columns
@@ -57,24 +42,27 @@ def change_col_types(df):
             df[col] = df[col].astype(float)
         except:
             continue
+            
+df_lst = []
+for player in players:
+    url = f"https://www.espn.com/mens-college-basketball/player/gamelog/_/id/{player}"
+    #res = requests.get(url)
+    #with open(f"./Data/espn_player_stats/{player[7:]}.xls", "wb") as f:
+        #f.write(res.content)
+    df = pd.read_html(url)
+    stats = pd.DataFrame(df[0])
+    stats["Player"] = player[8:]
+    stats = stats[:-1]  # drops last row which is an averages row
+    df_lst.append(stats)
 
+df = pd.concat(df_lst)
+df = df[df["Date"].str.contains("Hercules") == False] #filter out rows that aren't game stats
+df = df[df["Date"].str.contains("Skyline") == False]
+change_col_types(df)
 
-path = "Data/espn_player_stats"  # use your path
-files = glob.glob(os.path.join(path, "*.csv"))
+player_totals = df.groupby("Player").sum() #only season totals for each player
 
-lst = []
-lst2 = []
-for file in files:
-    df = pd.read_csv(file, index_col=0)
-    df = df[df["Date"].str.contains("Hercules") == False]
-    df = df[df["Date"].str.contains("Skyline") == False]
-    change_col_types(df)
-
-    total_df = df.groupby("Player").sum()
-    lst.append(total_df)
-
-player_totals = pd.concat(lst)
-player_totals = player_totals.drop(columns=["FG%", "3P%", "FT%"])
+#player_totals = player_totals.drop(columns=["FG%", "3P%", "FT%"])
 player_totals["rebounds/min"] = player_totals["REB"] / player_totals["MIN"]
 player_totals["assists/min"] = player_totals["AST"] / player_totals["MIN"]
 player_totals["blocks/min"] = player_totals["BLK"] / player_totals["MIN"]
@@ -111,6 +99,9 @@ player_totals = player_totals[
         "blocks/min",
         "STL",
         "steals/min",
+        "FG%",
+        "3P%", 
+        "FT%"        
     ]
 ]
 
