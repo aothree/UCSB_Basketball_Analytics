@@ -105,26 +105,6 @@ player_totals = player_totals[
     ]
 ]
 
-player_totals = player_totals[
-    [
-        "Player",
-        "PTS",
-        "points/min",
-        "REB",
-        "rebounds/min",
-        "AST",
-        "assists/min",
-        "TO",
-        "turnovers/min",
-        "PF",
-        "fouls/min",
-        "BLK",
-        "blocks/min",
-        "STL",
-        "steals/min",
-    ]
-]
-
 player_totals.set_index("Player", inplace=True)
 
 st.dataframe(player_totals.style.highlight_max(axis=0), height=1000)
