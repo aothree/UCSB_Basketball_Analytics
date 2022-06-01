@@ -96,3 +96,4 @@ st.dataframe(player_totals.style.highlight_max(axis=0), height=1000)
 
 # for requirements.txt.  pandas==1.3.4
 # streamlit==1.8.1
+# lxml==4.6.3
