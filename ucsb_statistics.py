@@ -28,6 +28,13 @@ df = df[:-1] # drops last row which is a totals row
 df = df.loc[(df.MIN > 12)].copy() #filter out any player who's played less than 12 minutes
 df.set_index("Name", inplace=True)
 
+df = [['MIN', 'points/min', 'rebounds/min',
+       'assists/min', 'blocks/min', 'steals/min', 'turnovers/min',
+       'offensive_reb/min', 'defensive_reb/min', 'FTA/min', '3PA/min',
+       'FGM', 'FGA', 'FTM', 'FTA', '3PM', '3PA', 'PTS', 'OR', 'DR',
+       'REB', 'AST', 'TO', 'STL', 'BLK'
+      ]]
+
 st.dataframe(df.style.highlight_max(axis=0), height=1000)
 
 st.title("Per Minute Visuals")
