@@ -4,7 +4,8 @@ import pandas as pd
 pd.options.display.max_columns = 100
 
 st.title("UCSB 2021-2022 season stats")
-st.write('Click the top of a column to sort')
+st.write('Yellow signifies the highest value in that column.')
+st.write('Click the top of a column to sort by that column.')
 
 url = f"https://www.espn.com/mens-college-basketball/team/stats/_/id/2540"
 info = pd.read_html(url)
