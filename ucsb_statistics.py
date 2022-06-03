@@ -35,6 +35,8 @@ df = [['MIN', 'points/min', 'rebounds/min',
        'REB', 'AST', 'TO', 'STL', 'BLK'
       ]]
 
+st.write(type(df))
+
 st.dataframe(df.style.highlight_max(axis=0), height=1000)
 
 st.title("Per Minute Visuals")
