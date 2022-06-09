@@ -5,7 +5,7 @@ Goals of project:
 
 2. Compile those statistics and calculate per-minute versions of those statistics.  
 
-3. So that this data will automatically update with each game played, create a streamlit app that displays a sortable dataframe with the up to date per-minute statistics.  
+3. Leverage Streamlit to create a user-friendly dashboard with real-time statistics for every game. 
 
 For the Streamlit app, click the icon below:
 
