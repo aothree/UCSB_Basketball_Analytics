@@ -92,5 +92,6 @@ if selected == 'Fouls Drawn Per 40':
     if __name__ == "__main__":    
         main()
 
- if selected == 'Opponent Shot Chart':
-    
+    if selected == 'Opponent Shot Chart':
+        st.title('Where Does the Opponent Shoot From?')
+        st.write('This section is under construction')
