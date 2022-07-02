@@ -93,5 +93,14 @@ elif selected == 'Fouls Drawn Per 40':
         main()
 
 elif selected == 'Opponent Shot Chart':
-        st.title('Where Does the Opponent Shoot From?')
-        st.write('This section is under construction')
+    st.title('Where Does the Opponent Shoot From?')
+    st.write('This section is under construction')
+    url = 'https://github.com/aothree/UCSB_Basketball_Analytics/blob/main/Data/fouls_drawn/big_west_fouls_drawn.csv'
+    df = pd.read_csv(url, on_bad_lines='skip')
+    df = pd.DataFrame(df)
+    st.dataframe(df)
+    teams = df['team'].unique()
+    opponent_selector = sidebar.selectbox(
+        "Select a Team",
+        teams
+    )

@@ -22,7 +22,6 @@
 8,Jacob Davison,76,G,calpoly,189.46,2.32239,0.76,6.33379,0.99
 9,Daniel Esparza,74,G,calpoly,103.88,3.46554,0.32,0.38506,0.01
 10,Ajani Kennedy,81,F,calpoly,77.94,3.59251,0.63,1.53965,0.09
-11,Matur Dhal,83,C,calpoly,35.45,9.0268,,5.64175,
 0,Atin Wright,73,G,csun,984.37,2.39747,0.74,4.02288,0.84
 1,Elijah Hardy,74,G,csun,930.37,2.32166,0.76,2.10669,0.33
 2,Christian Gray,78,F,csun,586.7799999999999,4.97631,0.29,4.70364,0.83
@@ -34,7 +33,6 @@
 8,Brendan Harrick,77,G,csun,457.54,2.71015,0.61,0.96166,0.05
 9,Marcel Stevens,74,G,csun,244.44,4.25462,0.14,2.61823,0.49
 10,Darius Brown II,74,G,csun,181.0,2.20994,0.8,2.43094,0.43
-11,Miles Brookins,81,F,csun,41.73,5.75126,,4.79272,
 0,E.J. Anosike,79,F,fullerton,1047.06,3.09438,0.76,6.34157,0.97
 1,Damari Milstead,74,G,fullerton,985.78,2.35347,0.75,3.28674,0.7
 2,Vincent Lee,80,F,fullerton,864.7999999999998,2.82146,0.83,3.56152,0.59
@@ -45,8 +43,6 @@
 7,Dante Maddox Jr.,74,G,fullerton,442.74,2.98143,0.49,3.25247,0.69
 8,Ibrahim Famouke Doumbia,79,F,fullerton,140.04000000000002,5.14139,0.26,3.14196,0.46
 9,Lado Laku,82,F,fullerton,117.2,8.19113,0.03,5.46075,0.92
-10,Grayson Carper,78,G,fullerton,40.46,0.98863,,0.0,
-11,Landis Spivey,77,G,fullerton,9.78,4.08998,,0.0,
 0,Noel Coleman,73,G,hawaii,603.5500000000001,2.25333,0.79,3.51255,0.75
 1,Jerome Desrosiers,79,F,hawaii,582.85,2.12748,0.95,2.74513,0.37
 2,Junior Madut,78,G,hawaii,561.9599999999999,3.70133,0.25,3.63015,0.78
@@ -56,21 +52,18 @@
 6,Amoro Lado,74,G,hawaii,265.26,2.41273,0.73,1.96034,0.28
 7,Mate Colina,84,C,hawaii,251.39999999999995,6.68258,0.2,5.56881,0.9
 8,Beon Riley,78,G,hawaii,139.25,6.03232,0.02,3.73429,0.8
-9,Zoar Nedd,78,F,hawaii,41.56,2.88739,,2.88739,
-10,Justus Jackson,73,G,hawaii,38.78999999999999,7.21836,,1.03119,
-11,Jaka Prevodnik,77,G,hawaii,4.79,16.70146,,8.35073,
-0,Colin Slater,73,G,long,1028.99,2.29351,0.77,3.80956,0.81
-1,Joel Murray,71,G,long,1027.25,2.02482,0.86,5.21781,0.96
-2,Jadon Jones,77,G,long,894.25,3.13112,0.44,2.28124,0.38
-3,Aboubacar Traore,77,F,long,726.97,4.95206,0.3,4.73197,0.84
-4,Jordan Roberts,81,G,long,714.35,3.91965,0.2,3.91965,0.83
-5,Drew Cobb,76,G,long,623.49,1.2831,0.98,2.5662,0.47
-6,Romelle Mansel,81,F,long,439.18,3.73423,0.59,3.09668,0.45
-7,Joe Hampton,80,F,long,296.11,7.02442,0.07,6.75425,0.98
-8,Tobias Rotegaard,79,F,long,281.56,4.26197,0.44,2.13098,0.21
-9,Eddie Scott,78,G,long,200.69,4.18556,0.15,2.79037,0.55
-10,AJ Neal,73,G,long,91.99,3.47864,0.32,6.08762,0.98
-11,RJ Rhoden,75,G,long,90.42,4.86618,0.07,3.98142,0.84
+0,Colin Slater,73,G,longbeach,1028.99,2.29351,0.77,3.80956,0.81
+1,Joel Murray,71,G,longbeach,1027.25,2.02482,0.86,5.21781,0.96
+2,Jadon Jones,77,G,longbeach,894.25,3.13112,0.44,2.28124,0.38
+3,Aboubacar Traore,77,F,longbeach,726.97,4.95206,0.3,4.73197,0.84
+4,Jordan Roberts,81,G,longbeach,714.35,3.91965,0.2,3.91965,0.83
+5,Drew Cobb,76,G,longbeach,623.49,1.2831,0.98,2.5662,0.47
+6,Romelle Mansel,81,F,longbeach,439.18,3.73423,0.59,3.09668,0.45
+7,Joe Hampton,80,F,longbeach,296.11,7.02442,0.07,6.75425,0.98
+8,Tobias Rotegaard,79,F,longbeach,281.56,4.26197,0.44,2.13098,0.21
+9,Eddie Scott,78,G,longbeach,200.69,4.18556,0.15,2.79037,0.55
+10,AJ Neal,73,G,longbeach,91.99,3.47864,0.32,6.08762,0.98
+11,RJ Rhoden,75,G,longbeach,90.42,4.86618,0.07,3.98142,0.84
 0,Elijah Pepper,75,G,ucdavis,815.5799999999999,2.69747,0.62,3.08983,0.64
 1,Ezra Manjon,71,G,ucdavis,804.13,2.33793,0.76,3.87997,0.82
 2,Kane Milling,76,G,ucdavis,667.95,1.85643,0.91,1.67677,0.2
@@ -82,7 +75,6 @@
 8,Cameron Ba,75,G,ucdavis,164.71,2.18566,0.81,1.45711,0.14
 9,Leo DeBruhl,74,G,ucdavis,148.77000000000004,5.10856,0.05,2.41984,0.43
 10,Francesco Borra,83,F,ucdavis,127.79000000000002,8.76438,0.02,1.25205,0.05
-11,B.J. Shaw,78,G,ucdavis,18.2,2.1978,,6.59341,
 0,Collin Welp,81,F,ucirvine,665.75,1.62223,0.99,3.90537,0.68
 1,Justin Hohn,73,G,ucirvine,547.06,2.55913,0.67,1.82795,0.24
 2,JC Butler,77,F,ucirvine,530.98,3.23929,0.73,2.3353,0.26
@@ -105,8 +97,6 @@
 7,Jhaylon Martinez,83,C,ucriverside,280.39000000000004,6.99026,0.16,2.85317,0.27
 8,Dragan Elkaz,77,G,ucriverside,233.99,3.07705,0.46,1.70947,0.21
 9,Quinton Ford,75,G,ucriverside,220.8,3.62319,0.28,1.81159,0.23
-10,Angus McWilliam,82,F,ucriverside,23.97,6.67501,,1.66875,
-11,Niyi Olabode,77,G,ucriverside,19.4,14.43299,,2.06186,
 0,Ajay Mitchell,76,G,ucsb,864.65,3.65466,0.27,5.41259,0.97
 1,Amadou Sow,81,F,ucsb,830.97,3.32142,0.7,3.99533,0.7
 2,Miles Norris,82,F,ucsb,821.05,2.43591,0.91,2.09488,0.2
@@ -117,8 +107,6 @@
 7,Sekou Touré,77,G,ucsb,304.30999999999995,4.86346,0.07,2.76034,0.54
 8,Cole Anderson,76,G,ucsb,284.41,3.09412,0.45,1.96899,0.28
 9,Jay Nagle,80,F,ucsb,162.3,1.7252,0.98,0.73937,0.02
-10,Ariel Bland,79,F,ucsb,40.22,3.97812,,1.98906,
-11,Jakov Kukic,82,F,ucsb,37.57999999999999,3.19319,,5.32198,
 0,Jake Killingsworth,77,G,ucsd,858.9199999999998,1.90937,0.9,0.69855,0.02
 1,Jace Roquemore,77,G,ucsd,837.85,1.43224,0.97,2.24384,0.37
 2,Bryce Pope,75,G,ucsd,781.8399999999999,1.89297,0.9,3.5813,0.77
@@ -130,4 +118,3 @@
 8,Matt Gray,80,F,ucsd,178.16,3.36776,0.69,2.24517,0.24
 9,"Michael Pearson, Jr.",69,G,ucsd,169.24,3.07256,0.46,1.65446,0.19
 10,Justin DeGraaf,79,F,ucsd,92.38,4.32994,0.43,4.32994,0.77
-11,Justin Pratt,75,G,ucsd,29.15,0.0,,2.74443,
