@@ -22,7 +22,7 @@ with sidebar:
         default_index=0,
         styles={
         "container": {"padding": "0"},
-        "icon": {"color": "blue", "font-size": "15px"}, 
+        "icon": {"font-size": "15px"}, 
         "nav-link": {"font-size": "15px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
         "nav-link-selected": {"background-color": "#025246"}
         }
@@ -71,7 +71,7 @@ if selected == 'Per Minute Stats':
     st.bar_chart(df["steals/min"], height = 400)
     st.bar_chart(df["turnovers/min"], height = 400)
 
-if selected == 'Fouls Drawn Per 40':
+elif selected == 'Fouls Drawn Per 40':
     
     st.markdown("<h1 style='text-align: center; color: black;'>Fouls Drawn per 40 Minutes</h1>", unsafe_allow_html=True)
     
@@ -92,5 +92,6 @@ if selected == 'Fouls Drawn Per 40':
     if __name__ == "__main__":    
         main()
 
- if selected == 'Opponent Shot Chart':
-    
+elif selected == 'Opponent Shot Chart':
+        st.title('Where Does the Opponent Shoot From?')
+        st.write('This section is under construction')
