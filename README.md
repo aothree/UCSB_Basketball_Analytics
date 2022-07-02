@@ -11,3 +11,5 @@ Goals of project:
 For the Streamlit app, click the icon below:
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aothree-ucsb-basketball-analytics-ucsb-statistics-aygcdu.streamlitapp.com/)
+
+Stats are sourced from the great cbbanalytics.com 
