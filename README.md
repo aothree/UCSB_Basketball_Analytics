@@ -3,9 +3,11 @@ Goals of project:
 
 1. Scrape 2021-2022 statistics from ESPN for UCSB's basketball team.  
 
-2. Compile those statistics and calculate per-minute versions of those statistics.  
+2. "Per Minute Stats".  Compile statistics into an organized dataframe and calculate per-minute versions of those statistics.  
 
-3. Leverage Streamlit to create a user-friendly dashboard with real-time statistics for every game. 
+3. "Fouls Drawn Per 40".  Help UCSB prepare on the defensive end by plotting out its opponents players by fouls drawn per 40 minutes.  Plot this data by embedding an interactive Tableau Dashboard.  This should help for matchup planning to know which opposing players typically draw the most fouls.  
+
+4. Leverage Streamlit to create a user-friendly dashboard with real-time statistics.
 
 For the Streamlit app, click the icon below:
 
