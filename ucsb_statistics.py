@@ -54,8 +54,14 @@ if selected == 'Fouls Drawn Per 40':
     url='https://drive.google.com/uc?id=' + url.split('/')[-2]
     df = pd.read_csv(url, index_col = 0)
     
-    st.write('To sort by a column, click the column header.')
-    st.dataframe(df, height = 700, width = 1000)
+    st.write('Select a Team to see Fouls/Drawn per 40 min')
+    
+    team_selector = st.selectbox("Select a Team", df['team'].unique())
+    df_filtered = df.loc[(df['team'] == team_selector)]
+    df_pfd40 = df_filtered[['Player', 'position','Personal Fouls Drawn per 40', 'pfdp40_percentile']]
+    df_pfd40.set_index('Player', inplace = True)    
+    
+    st.dataframe(df_pfd40.sort_values(by = 'Personal Fouls Drawn per 40', ascending = False), height = 700, width = 750)
 
 elif selected == 'Per Minute Stats':
     st.title("UCSB 2021-2022 Per-Minute season stats")
@@ -111,3 +117,6 @@ elif selected == 'Opponent Shot Chart':
         #"Select a Team",
         #teams
     #)
+    
+    
+   
